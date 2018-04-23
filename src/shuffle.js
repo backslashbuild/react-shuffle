@@ -3,6 +3,7 @@
 
 import React from 'react';
 import ReactDom from 'react-dom';
+import PropTypes from 'prop-types';
 import assign from 'object-assign';
 import tweenState from 'react-tween-state';
 import ReactTransitionGroup from 'react-addons-transition-group';
@@ -121,10 +122,10 @@ const Shuffle = React.createClass({
   displayName: 'Shuffle',
 
   propTypes: {
-    duration: React.PropTypes.number,
-    scale: React.PropTypes.bool,
-    fade: React.PropTypes.bool,
-    initial: React.PropTypes.bool
+    duration: PropTypes.number,
+    scale: PropTypes.bool,
+    fade: PropTypes.bool,
+    initial: PropTypes.bool
   },
 
   getDefaultProps() {
